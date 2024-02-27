@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@mui/icons-material": "^5.15.11",
+    "@mui/material": "^5.15.11",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -10,11 +15,15 @@
     "@types/node": "^20.11.20",
     "@types/react": "^18.2.58",
     "@types/react-dom": "^18.2.19",
+    "@types/react-router-dom": "^5.3.3",
+    "localforage": "^1.10.0",
+    "match-sorter": "^6.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.50.1",
     "react-router-dom": "^6.22.1",
     "react-scripts": "5.0.1",
+    "sort-by": "^1.2.0",
     "typescript": "^5.3.3",
     "web-vitals": "^2.1.4",
     "zod": "^3.22.4"
@@ -43,6 +52,7 @@
   },
   "devDependencies": {
     "eslint": "^8.57.0",
-    "eslint-plugin-react": "^7.33.2"
+    "eslint-plugin-react": "^7.33.2",
+    "typescript-plugin-css-modules": "^5.1.0"
   }
 }
