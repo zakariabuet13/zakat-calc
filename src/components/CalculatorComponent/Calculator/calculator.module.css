@@ -21,8 +21,37 @@
   padding: 0.5rem;
 }
 
+.three-field-row {
+  display: flex;
+  gap: 1rem;
+
+  >* {
+    flex: 1;
+  }
+}
+
+.input-group {
+  margin-bottom: 1rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+.input-description {
+  color: rgba(0, 0, 0, 0.65)
+}
+
 @media screen and (max-width: 600px) {
   .result {
     display: none;
+  }
+
+  .three-field-row {
+    gap: 8px;
+
+    > :last-child {
+      flex: 3;
+    }
   }
 }

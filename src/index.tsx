@@ -16,6 +16,7 @@ import { RouterProvider } from "react-router-dom";
 const theme = createTheme({
   typography: {
     fontFamily: "Kalpurush, Roboto, Helvetica, Arial, sans-serif",
+    fontSize: 15,
   },
   components: {
     MuiCssBaseline: {
@@ -29,6 +30,14 @@ const theme = createTheme({
             backgroundColor: "#f1f1fd",
           },
         `,
+      },
+    },
+    MuiInputBase: {
+      styleOverrides: {
+        root: {
+          height: '2em',
+          fontSize: '1rem',
+        },
       },
     },
   },
