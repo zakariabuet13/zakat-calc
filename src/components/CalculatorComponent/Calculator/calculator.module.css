@@ -21,6 +21,17 @@
   padding: 0.5rem;
 }
 
+.result-mobile {
+  display: none;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: var(--color-secondary);
+  border-radius: 0.25rem;
+  width: 100%;
+}
+
 .three-field-row {
   display: flex;
   gap: 1rem;
@@ -36,15 +47,30 @@
   p {
     margin: 0;
   }
+
+  p:first-child {
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 700;
+  }
 }
 
 .input-description {
-  color: rgba(0, 0, 0, 0.65)
+  color: rgba(0, 0, 0, 0.75)
 }
 
 @media screen and (max-width: 600px) {
+  .calculator {
+    border-right: 0px;
+    padding-right: 0;
+    margin-bottom: 70px;
+  }
+
   .result {
     display: none;
+  }
+
+  .result-mobile {
+    display: block;
   }
 
   .three-field-row {

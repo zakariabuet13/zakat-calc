@@ -17,6 +17,17 @@ const theme = createTheme({
   typography: {
     fontFamily: "Kalpurush, Roboto, Helvetica, Arial, sans-serif",
     fontSize: 15,
+
+    h5: {
+      '@media (max-width:600px)': {
+        fontSize: '1.4rem',
+      },
+    },
+    h6: {
+      '@media (max-width:600px)': {
+        fontSize: '1.1rem',
+      },
+    }
   },
   components: {
     MuiCssBaseline: {
