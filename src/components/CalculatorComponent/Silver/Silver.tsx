@@ -19,9 +19,9 @@ export const Silver = () => {
         </Box>
 
         <Box className={styles["three-field-row"]}>
-          <TextField placeholder="ভরি" variant="outlined" size="small" />
-          <TextField placeholder="গ্রাম" variant="outlined" size="small" />
-          <TextField placeholder="সমপরিমান বিক্রয় মূল্য" variant="outlined" size="small" />
+          <TextField label="ভরি" variant="outlined" size="small" />
+          <TextField label="গ্রাম" variant="outlined" size="small" />
+          <TextField label="সমপরিমান বিক্রয় মূল্য" variant="outlined" size="small" />
         </Box>
       </Box>
 
@@ -31,9 +31,9 @@ export const Silver = () => {
         </Box>
 
         <Box className={styles["three-field-row"]}>
-          <TextField placeholder="ভরি" variant="outlined" size="small" />
-          <TextField placeholder="গ্রাম" variant="outlined" size="small" />
-          <TextField placeholder="সমপরিমান বিক্রয় মূল্য" variant="outlined" size="small" />
+          <TextField label="ভরি" variant="outlined" size="small" />
+          <TextField label="গ্রাম" variant="outlined" size="small" />
+          <TextField label="সমপরিমান বিক্রয় মূল্য" variant="outlined" size="small" />
         </Box>
       </Box>
 
@@ -43,9 +43,9 @@ export const Silver = () => {
         </Box>
 
         <Box className={styles["three-field-row"]}>
-          <TextField placeholder="ভরি" variant="outlined" size="small" />
-          <TextField placeholder="গ্রাম" variant="outlined" size="small" />
-          <TextField placeholder="সমপরিমান বিক্রয় মূল্য" variant="outlined" size="small" />
+          <TextField label="ভরি" variant="outlined" size="small" />
+          <TextField label="গ্রাম" variant="outlined" size="small" />
+          <TextField label="সমপরিমান বিক্রয় মূল্য" variant="outlined" size="small" />
         </Box>
       </Box>
       
@@ -55,9 +55,9 @@ export const Silver = () => {
         </Box>
 
         <Box className={styles["three-field-row"]}>
-          <TextField placeholder="ভরি" variant="outlined" size="small" />
-          <TextField placeholder="গ্রাম" variant="outlined" size="small" />
-          <TextField placeholder="সমপরিমান বিক্রয় মূল্য" variant="outlined" size="small" />
+          <TextField label="ভরি" variant="outlined" size="small" />
+          <TextField label="গ্রাম" variant="outlined" size="small" />
+          <TextField label="সমপরিমান বিক্রয় মূল্য" variant="outlined" size="small" />
         </Box>
       </Box>
     </Box>

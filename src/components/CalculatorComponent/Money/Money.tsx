@@ -19,7 +19,7 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth placeholder="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
         </Box>
       </Box>
 
@@ -33,7 +33,7 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth placeholder="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
         </Box>
       </Box>
 
@@ -46,7 +46,7 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth placeholder="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
         </Box>
       </Box>
 
@@ -59,7 +59,7 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth placeholder="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
         </Box>
       </Box>
 
@@ -73,7 +73,7 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth placeholder="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
         </Box>
       </Box>
 
@@ -88,7 +88,7 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth placeholder="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
         </Box>
       </Box>
 
@@ -101,7 +101,7 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth placeholder="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
         </Box>
       </Box>
 
@@ -116,7 +116,7 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth placeholder="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
         </Box>
       </Box>
 
@@ -129,7 +129,7 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth placeholder="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
         </Box>
       </Box>
 
@@ -142,7 +142,7 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth placeholder="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
         </Box>
       </Box>
 
@@ -157,7 +157,7 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth placeholder="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
         </Box>
       </Box>
 
@@ -170,7 +170,7 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth placeholder="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
         </Box>
       </Box>
 
@@ -183,7 +183,7 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth placeholder="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
         </Box>
       </Box>
 
@@ -197,7 +197,7 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth placeholder="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
         </Box>
       </Box>
     </Box>

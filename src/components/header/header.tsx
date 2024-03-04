@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
-    <Box py={2} mb={2} sx={{ bgcolor: "secondary.main", position: "sticky", top: 0 }} zIndex={1}>
+    <Box py={2} mb={2} sx={{ bgcolor: "secondary.main", position: "sticky", top: 0 }} zIndex={9}>
       <Container maxWidth={"lg"} sx={{ display: "flex" }} className={styles.header}>
         <Link to={"/"}>
           <Box className={styles.logo}>

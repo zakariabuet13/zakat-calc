@@ -13,51 +13,51 @@ export const Gold = () => {
         </Typography>
       </Box>
 
-      <Box className={styles['input-group']}>
+      <Box className={styles["input-group"]}>
         <Box>
           <Typography>১) ২২ ক্যারেট স্বর্ণ</Typography>
         </Box>
 
         <Box className={styles["three-field-row"]}>
-          <TextField placeholder="ভরি" variant="outlined" size="small" />
-          <TextField placeholder="গ্রাম" variant="outlined" size="small" />
-          <TextField placeholder="সমপরিমান বিক্রয় মূল্য" variant="outlined" size="small" />
+          <TextField label="ভরি" variant="outlined" size="small" />
+          <TextField label="গ্রাম" variant="outlined" size="small" />
+          <TextField label="সমপরিমান বিক্রয় মূল্য" variant="outlined" size="small" />
         </Box>
       </Box>
 
-      <Box className={styles['input-group']}>
+      <Box className={styles["input-group"]}>
         <Box>
           <Typography>২) ২১ ক্যারেট স্বর্ণ</Typography>
         </Box>
 
         <Box className={styles["three-field-row"]}>
-          <TextField placeholder="ভরি" variant="outlined" size="small" />
-          <TextField placeholder="গ্রাম" variant="outlined" size="small" />
-          <TextField placeholder="সমপরিমান বিক্রয় মূল্য" variant="outlined" size="small" />
+          <TextField label="ভরি" variant="outlined" size="small" />
+          <TextField label="গ্রাম" variant="outlined" size="small" />
+          <TextField label="সমপরিমান বিক্রয় মূল্য" variant="outlined" size="small" />
         </Box>
       </Box>
 
-      <Box className={styles['input-group']}>
+      <Box className={styles["input-group"]}>
         <Box>
           <Typography>৩) ১৮ ক্যারেট স্বর্ণ</Typography>
         </Box>
 
         <Box className={styles["three-field-row"]}>
-          <TextField placeholder="ভরি" variant="outlined" size="small" />
-          <TextField placeholder="গ্রাম" variant="outlined" size="small" />
-          <TextField placeholder="সমপরিমান বিক্রয় মূল্য" variant="outlined" size="small" />
+          <TextField label="ভরি" variant="outlined" size="small" />
+          <TextField label="গ্রাম" variant="outlined" size="small" />
+          <TextField label="সমপরিমান বিক্রয় মূল্য" variant="outlined" size="small" />
         </Box>
       </Box>
-      
-      <Box className={styles['input-group']}>
+
+      <Box className={styles["input-group"]}>
         <Box>
           <Typography>৪) সনাতন স্বর্ণ</Typography>
         </Box>
 
         <Box className={styles["three-field-row"]}>
-          <TextField placeholder="ভরি" variant="outlined" size="small" />
-          <TextField placeholder="গ্রাম" variant="outlined" size="small" />
-          <TextField placeholder="সমপরিমান বিক্রয় মূল্য" variant="outlined" size="small" />
+          <TextField label="ভরি" variant="outlined" size="small" />
+          <TextField label="গ্রাম" variant="outlined" size="small" />
+          <TextField label="সমপরিমান বিক্রয় মূল্য" variant="outlined" size="small" />
         </Box>
       </Box>
     </Box>

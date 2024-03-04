@@ -19,15 +19,15 @@ const theme = createTheme({
     fontSize: 15,
 
     h5: {
-      '@media (max-width:600px)': {
-        fontSize: '1.4rem',
+      "@media (max-width:600px)": {
+        fontSize: "1.4rem",
       },
     },
     h6: {
-      '@media (max-width:600px)': {
-        fontSize: '1.1rem',
+      "@media (max-width:600px)": {
+        fontSize: "1.1rem",
       },
-    }
+    },
   },
   components: {
     MuiCssBaseline: {
@@ -43,14 +43,31 @@ const theme = createTheme({
         `,
       },
     },
-    MuiInputBase: {
+    MuiFormControl: {
       styleOverrides: {
         root: {
-          height: '2em',
-          fontSize: '1rem',
+          marginTop: "4px",
         },
       },
     },
+    MuiInputBase: {
+      styleOverrides: {
+        root: {
+          height: "2em",
+          fontSize: "1rem",
+        },
+      },
+    },
+    MuiInputLabel: {
+      styleOverrides: {
+        root: {
+          transform: "translate(14px, 5px) scale(1)",
+          "&.Mui-focused": {
+            transform: "translate(14px, -9px) scale(0.75)",
+          }
+        }
+      }
+    }
   },
   palette: {
     primary: {
