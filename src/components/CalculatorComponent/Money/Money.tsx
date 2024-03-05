@@ -1,7 +1,11 @@
 import { Box, TextField, Typography } from "@mui/material";
 import styles from "../Calculator/calculator.module.css";
+import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
+import { updateMoneyAmount } from "../../../redux/assetsSlice";
 
 export const Money = () => {
+  const dispatch = useAppDispatch();
+
   return (
     <Box mb={6}>
       <Box mb={2}>
@@ -19,7 +23,16 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            fullWidth
+            label="সমপরিমান মূল্য"
+            variant="outlined"
+            size="small"
+            inputProps={{ pattern: "[a-z]{1,15}" }}
+            onChange={(event) => {
+              dispatch(updateMoneyAmount(Number(event.target.value.replace(/\D/g,''))));
+            }}
+          />
         </Box>
       </Box>
 

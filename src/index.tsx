@@ -12,6 +12,8 @@ import "@fontsource/roboto/700.css";
 import Kalpurush from "./fonts/kalpurush.ttf";
 import router from "./router";
 import { RouterProvider } from "react-router-dom";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
 
 const theme = createTheme({
   typography: {
@@ -64,10 +66,13 @@ const theme = createTheme({
           transform: "translate(14px, 5px) scale(1)",
           "&.Mui-focused": {
             transform: "translate(14px, -9px) scale(0.75)",
-          }
-        }
-      }
-    }
+          },
+          "&.MuiFormLabel-filled": {
+            transform: "translate(14px, -9px) scale(0.75)",
+          },
+        },
+      },
+    },
   },
   palette: {
     primary: {
@@ -83,8 +88,10 @@ const root = ReactDOM.createRoot(document.getElementById("root")!);
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <RouterProvider router={router} />
+      <Provider store={store}>
+        <CssBaseline />
+        <RouterProvider router={router} />
+      </Provider>
     </ThemeProvider>
   </React.StrictMode>
 );

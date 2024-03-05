@@ -1,9 +1,14 @@
 import { Box, Button, Typography } from "@mui/material";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import ZakatResultExplanationModal from "../Modal/ZakatResultExplanationModal";
+import { useAppSelector } from "../../redux/hooks";
+import { Nisab } from "../../constants";
+import { numberFormatter } from "../../utils";
 
 export const ZakatResult = () => {
   const [isExplanationModalOpen, setIsExplanationModalOpen] = useState(false);
+  const NisabAmount = useMemo(() => numberFormatter.format(Nisab), []);
+  const money = useAppSelector((state) => state.assets.money);
 
   return (
     <Box p={1}>
@@ -12,10 +17,10 @@ export const ZakatResult = () => {
       </Typography>
 
       <Typography variant={"body1"} fontWeight={700}>
-        যাকাতের নিসাবঃ 67,360
+        যাকাতের নিসাবঃ {NisabAmount}
       </Typography>
       <Typography variant={"body1"} fontWeight={700}>
-        মোট সম্পদঃ 0
+        মোট সম্পদঃ {numberFormatter.format(money)}
       </Typography>
       <Typography variant={"body1"} color={"primary.main"} fontWeight={700}>
         আদায়যোগ্য যাকাতঃ 0
