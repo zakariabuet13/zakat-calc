@@ -8,10 +8,10 @@ export const Header = () => {
       <Container maxWidth={"lg"} sx={{ display: "flex" }} className={styles.header}>
         <Link to={"/"}>
           <Box className={styles.logo}>
-            <Typography variant="h5" color={"primary.main"} fontWeight={700}>
+            <Typography variant="h5" color={"primary.main"} fontWeight={700} lineHeight={1.2}>
               যাকাত
             </Typography>
-            <Typography variant="h6" color={"primary.main"} fontWeight={700}>
+            <Typography variant="h6" color={"primary.main"} fontWeight={700} lineHeight={1.2}>
               ক্যালকুলেটর
             </Typography>
           </Box>

@@ -1,7 +1,10 @@
-import { Box, TextField, Typography } from "@mui/material";
+import { Box, InputAdornment, TextField, Typography } from "@mui/material";
 import styles from "../Calculator/calculator.module.css";
+import { UseFormRegister } from "react-hook-form";
+import { ICalculatorFormInput } from "../Calculator/ICalculatorFormInput";
+import { digitValidator } from "../../../utils";
 
-export const NonZakatableAssets = () => {
+export const NonZakatableAssets = ({ register }: { register: UseFormRegister<ICalculatorFormInput> }) => {
   return (
     <Box mb={6}>
       <Box className={styles["input-group"]}>
@@ -13,7 +16,16 @@ export const NonZakatableAssets = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("nonZakatableAsset.personalLoad")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
 
@@ -27,7 +39,16 @@ export const NonZakatableAssets = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("nonZakatableAsset.installments")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
 
@@ -40,7 +61,16 @@ export const NonZakatableAssets = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("nonZakatableAsset.mahar")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
 
@@ -53,7 +83,16 @@ export const NonZakatableAssets = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("nonZakatableAsset.utilityBill")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
 
@@ -66,7 +105,16 @@ export const NonZakatableAssets = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("nonZakatableAsset.outstandingPament")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
 
@@ -79,7 +127,16 @@ export const NonZakatableAssets = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("nonZakatableAsset.advanceZakat")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
 
@@ -89,7 +146,16 @@ export const NonZakatableAssets = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("nonZakatableAsset.pastZakat")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
 
@@ -102,7 +168,16 @@ export const NonZakatableAssets = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("nonZakatableAsset.securityMoney")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
 
@@ -117,7 +192,16 @@ export const NonZakatableAssets = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("nonZakatableAsset.companyLoad")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
 
@@ -130,7 +214,16 @@ export const NonZakatableAssets = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("nonZakatableAsset.illegalMoney")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
     </Box>

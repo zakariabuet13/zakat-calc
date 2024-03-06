@@ -1,9 +1,12 @@
-import { Box, TextField, Typography } from "@mui/material";
+import { Box, InputAdornment, TextField, Typography } from "@mui/material";
 import styles from "../Calculator/calculator.module.css";
-import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
+import { useAppDispatch } from "../../../redux/hooks";
 import { updateMoneyAmount } from "../../../redux/assetsSlice";
+import { UseFormRegister } from "react-hook-form";
+import { ICalculatorFormInput } from "../Calculator/ICalculatorFormInput";
+import { digitValidator } from "../../../utils";
 
-export const Money = () => {
+export const Money = ({ register }: { register: UseFormRegister<ICalculatorFormInput> }) => {
   const dispatch = useAppDispatch();
 
   return (
@@ -24,13 +27,16 @@ export const Money = () => {
 
         <Box>
           <TextField
+            {...register("money.cash")}
             fullWidth
-            label="সমপরিমান মূল্য"
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
             variant="outlined"
             size="small"
-            inputProps={{ pattern: "[a-z]{1,15}" }}
             onChange={(event) => {
-              dispatch(updateMoneyAmount(Number(event.target.value.replace(/\D/g,''))));
+              dispatch(updateMoneyAmount(Number(event.target.value.replace(/\D/g, ""))));
             }}
           />
         </Box>
@@ -46,7 +52,16 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("money.savings")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
 
@@ -59,7 +74,16 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("money.foreignCurrency")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
 
@@ -72,7 +96,16 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("money.amanot")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
 
@@ -86,7 +119,16 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("money.loan")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
 
@@ -101,7 +143,16 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("money.advance")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
 
@@ -114,7 +165,16 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("money.associationSavings")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
 
@@ -129,7 +189,16 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("money.businessAssets")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
 
@@ -142,7 +211,16 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("money.arrears")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
 
@@ -155,7 +233,16 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("money.companyShare")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
 
@@ -170,7 +257,16 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("money.companyShare2")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
 
@@ -183,7 +279,16 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("money.divident")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
 
@@ -196,7 +301,16 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("money.securities")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
 
@@ -210,7 +324,16 @@ export const Money = () => {
         </Box>
 
         <Box>
-          <TextField fullWidth label="সমপরিমান মূল্য" variant="outlined" size="small" />
+          <TextField
+            {...register("money.providentFund")}
+            fullWidth
+            onKeyDown={digitValidator}
+            InputProps={{
+              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+            }}
+            variant="outlined"
+            size="small"
+          />
         </Box>
       </Box>
     </Box>

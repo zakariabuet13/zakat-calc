@@ -48,7 +48,7 @@
     margin: 0;
   }
 
-  p:first-child {
+  > div > p:first-child {
     color: rgba(0, 0, 0, 0.75);
     font-weight: 700;
   }
@@ -75,9 +75,10 @@
 
   .three-field-row {
     gap: 8px;
+    flex-wrap: wrap;
 
     > :last-child {
-      flex: 3;
+      flex-basis: 100%;
     }
   }
 }
