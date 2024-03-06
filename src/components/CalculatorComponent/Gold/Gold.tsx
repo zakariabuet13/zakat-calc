@@ -18,7 +18,7 @@ export const Gold = ({
     <Box mb={6}>
       <Box mb={2}>
         <Typography variant={"h5"} display={"flex"} alignItems={"center"} gap={1} flexWrap={"wrap"} fontWeight={700}>
-          <img src="/calculator.png" alt="Calculator Icon" /> স্বর্ণ
+          <img src={process.env.PUBLIC_URL + "/calculator.png"} alt="Calculator Icon" /> স্বর্ণ
           <Typography variant={"body1"} className={styles["input-description"]}>
             (বার/বিস্কুট/অলংকার - ব্যবহৃত বা অব্যবহৃত)
           </Typography>
@@ -48,7 +48,7 @@ export const Gold = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">ভরিঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>ভরিঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -68,7 +68,7 @@ export const Gold = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">গ্রামঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>গ্রামঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -91,7 +91,7 @@ export const Gold = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">বিক্রয় মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>বিক্রয় মূল্যঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -123,7 +123,7 @@ export const Gold = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">ভরিঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>ভরিঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -143,7 +143,7 @@ export const Gold = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">গ্রামঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>গ্রামঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -166,7 +166,7 @@ export const Gold = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">বিক্রয় মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>বিক্রয় মূল্যঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -198,7 +198,7 @@ export const Gold = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">ভরিঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>ভরিঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -218,7 +218,7 @@ export const Gold = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">গ্রামঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>গ্রামঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -241,7 +241,7 @@ export const Gold = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">বিক্রয় মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>বিক্রয় মূল্যঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -262,10 +262,7 @@ export const Gold = ({
                 const value = event.target.value;
                 if (value !== "") {
                   setValue("gold.old.gram", (event.target.value * 11.664).toFixed(2));
-                  setValue(
-                    "gold.old.taka",
-                    (event.target.value * 11.664 * Price.SellingPrice.Gold.old).toFixed(2)
-                  );
+                  setValue("gold.old.taka", (event.target.value * 11.664 * Price.SellingPrice.Gold.old).toFixed(2));
                 } else {
                   resetField("gold.old.gram");
                   resetField("gold.old.taka");
@@ -273,7 +270,7 @@ export const Gold = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">ভরিঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>ভরিঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -293,7 +290,7 @@ export const Gold = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">গ্রামঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>গ্রামঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -304,10 +301,7 @@ export const Gold = ({
               onChange: (event) => {
                 const value = event.target.value;
                 if (value !== "") {
-                  setValue(
-                    "gold.old.vori",
-                    (event.target.value / 11.664 / Price.SellingPrice.Gold.old).toFixed(2)
-                  );
+                  setValue("gold.old.vori", (event.target.value / 11.664 / Price.SellingPrice.Gold.old).toFixed(2));
                   setValue("gold.old.gram", (event.target.value / Price.SellingPrice.Gold.old).toFixed(2));
                 } else {
                   resetField("gold.old.vori");
@@ -316,7 +310,7 @@ export const Gold = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">বিক্রয় মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>বিক্রয় মূল্যঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"

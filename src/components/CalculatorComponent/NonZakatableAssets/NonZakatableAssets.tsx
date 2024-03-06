@@ -21,7 +21,7 @@ export const NonZakatableAssets = ({ register }: { register: UseFormRegister<ICa
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"
@@ -44,7 +44,7 @@ export const NonZakatableAssets = ({ register }: { register: UseFormRegister<ICa
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"
@@ -66,7 +66,7 @@ export const NonZakatableAssets = ({ register }: { register: UseFormRegister<ICa
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"
@@ -88,7 +88,7 @@ export const NonZakatableAssets = ({ register }: { register: UseFormRegister<ICa
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"
@@ -110,7 +110,7 @@ export const NonZakatableAssets = ({ register }: { register: UseFormRegister<ICa
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"
@@ -132,7 +132,7 @@ export const NonZakatableAssets = ({ register }: { register: UseFormRegister<ICa
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"
@@ -151,7 +151,7 @@ export const NonZakatableAssets = ({ register }: { register: UseFormRegister<ICa
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"
@@ -173,7 +173,7 @@ export const NonZakatableAssets = ({ register }: { register: UseFormRegister<ICa
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"
@@ -197,7 +197,7 @@ export const NonZakatableAssets = ({ register }: { register: UseFormRegister<ICa
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"
@@ -219,7 +219,7 @@ export const NonZakatableAssets = ({ register }: { register: UseFormRegister<ICa
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"

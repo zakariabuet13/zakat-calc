@@ -13,7 +13,7 @@ export const Money = ({ register }: { register: UseFormRegister<ICalculatorFormI
     <Box mb={6}>
       <Box mb={2}>
         <Typography variant={"h5"} display={"flex"} alignItems={"center"} gap={1} flexWrap={"wrap"} fontWeight={700}>
-          <img src="/calculator.png" alt="Calculator Icon" /> অর্থ/কড়ি এবং ব্যবসায়িক মাল
+          <img src={process.env.PUBLIC_URL + "/calculator.png"} alt="Calculator Icon" /> অর্থ/কড়ি এবং ব্যবসায়িক মাল
         </Typography>
       </Box>
 
@@ -31,7 +31,7 @@ export const Money = ({ register }: { register: UseFormRegister<ICalculatorFormI
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"
@@ -57,7 +57,7 @@ export const Money = ({ register }: { register: UseFormRegister<ICalculatorFormI
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"
@@ -79,7 +79,7 @@ export const Money = ({ register }: { register: UseFormRegister<ICalculatorFormI
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"
@@ -101,7 +101,7 @@ export const Money = ({ register }: { register: UseFormRegister<ICalculatorFormI
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"
@@ -124,7 +124,7 @@ export const Money = ({ register }: { register: UseFormRegister<ICalculatorFormI
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"
@@ -148,7 +148,7 @@ export const Money = ({ register }: { register: UseFormRegister<ICalculatorFormI
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"
@@ -170,7 +170,7 @@ export const Money = ({ register }: { register: UseFormRegister<ICalculatorFormI
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"
@@ -194,7 +194,7 @@ export const Money = ({ register }: { register: UseFormRegister<ICalculatorFormI
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"
@@ -216,7 +216,7 @@ export const Money = ({ register }: { register: UseFormRegister<ICalculatorFormI
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"
@@ -238,7 +238,7 @@ export const Money = ({ register }: { register: UseFormRegister<ICalculatorFormI
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"
@@ -262,7 +262,7 @@ export const Money = ({ register }: { register: UseFormRegister<ICalculatorFormI
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"
@@ -284,7 +284,7 @@ export const Money = ({ register }: { register: UseFormRegister<ICalculatorFormI
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"
@@ -306,7 +306,7 @@ export const Money = ({ register }: { register: UseFormRegister<ICalculatorFormI
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"
@@ -329,7 +329,7 @@ export const Money = ({ register }: { register: UseFormRegister<ICalculatorFormI
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start">সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             size="small"

@@ -9,7 +9,6 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
-import Kalpurush from "./fonts/kalpurush.ttf";
 import router from "./router";
 import { RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux";
@@ -35,10 +34,6 @@ const theme = createTheme({
     MuiCssBaseline: {
       styleOverrides: {
         styleOverrides: `
-          @font-face {
-            font-family: 'Kalpurush';
-            src: url(${Kalpurush}) format('truetype');
-          },
           body: {
             backgroundColor: "#f1f1fd",
           },

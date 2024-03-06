@@ -1,9 +1,9 @@
-import { Navigate, createBrowserRouter } from "react-router-dom";
+import { Navigate, createHashRouter } from "react-router-dom";
 
 import Calculator from "./pages/calculator";
 import AboutZakat from "./pages/about-zakat";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <Calculator/>,

@@ -18,7 +18,7 @@ export const Silver = ({
     <Box mb={6}>
       <Box mb={2}>
         <Typography variant={"h5"} display={"flex"} alignItems={"center"} gap={1} flexWrap={"wrap"} fontWeight={700}>
-          <img src="/calculator.png" alt="Calculator Icon" /> রূপা
+          <img src={process.env.PUBLIC_URL + "/calculator.png"} alt="Calculator Icon" /> রূপা
           <Typography variant={"body1"} className={styles["input-description"]}>
             (বার/বিস্কুট/অলংকার - ব্যবহৃত বা অব্যবহৃত)
           </Typography>
@@ -48,7 +48,7 @@ export const Silver = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">ভরিঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>ভরিঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -68,7 +68,7 @@ export const Silver = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">গ্রামঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>গ্রামঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -91,7 +91,7 @@ export const Silver = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">বিক্রয় মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>বিক্রয় মূল্যঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -123,7 +123,7 @@ export const Silver = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">ভরিঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>ভরিঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -143,7 +143,7 @@ export const Silver = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">গ্রামঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>গ্রামঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -166,7 +166,7 @@ export const Silver = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">বিক্রয় মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>বিক্রয় মূল্যঃ</InputAdornment>,
             }}
             variant="outlined"
             onKeyDown={digitValidator}
@@ -198,7 +198,7 @@ export const Silver = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">ভরিঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>ভরিঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -218,7 +218,7 @@ export const Silver = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">গ্রামঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>গ্রামঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -241,7 +241,7 @@ export const Silver = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">বিক্রয় মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>বিক্রয় মূল্যঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -270,7 +270,7 @@ export const Silver = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">ভরিঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>ভরিঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -290,7 +290,7 @@ export const Silver = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">গ্রামঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>গ্রামঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -310,7 +310,7 @@ export const Silver = ({
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start">বিক্রয় মূল্যঃ</InputAdornment>,
+              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>বিক্রয় মূল্যঃ</InputAdornment>,
             }}
             onKeyDown={digitValidator}
             variant="outlined"
