@@ -9,12 +9,26 @@ import { useEffect } from "react";
 
 export const Money = () => {
   const dispatch = useAppDispatch();
-  const { register, getValues, watch } = useForm<ICalculatorFormInputMoney>();
+  const { register, getValues, watch } = useForm<ICalculatorFormInputMoney>({
+    defaultValues: JSON.parse(localStorage.getItem('money') || '{}')
+  });
   const formWatcher = watch();
 
   useEffect(() => {
-    console.log(getValues());
+    localStorage.setItem('money', JSON.stringify(getValues()));
+    updateStore();
   }, [formWatcher]);
+
+  function updateStore() {
+    const formValues = getValues();
+    let totalMoney = 0
+    
+    for (let key in formValues) {
+      totalMoney += Number(formValues[key as keyof ICalculatorFormInputMoney]);
+    }
+
+    dispatch(updateMoneyAmount(totalMoney));
+  }
 
   return (
     <Box mb={6}>
@@ -46,9 +60,6 @@ export const Money = () => {
             }}
             variant="outlined"
             size="small"
-            onChange={(event) => {
-              dispatch(updateMoneyAmount(Number(event.target.value.replace(/\D/g, ""))));
-            }}
           />
         </Box>
       </Box>

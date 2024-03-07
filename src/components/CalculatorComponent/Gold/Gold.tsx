@@ -5,14 +5,50 @@ import { ICalculatorFormInputGold } from "../Calculator/ICalculatorFormInput";
 import { Price } from "../../../constants";
 import { digitValidator } from "../../../utils";
 import { useEffect } from "react";
+import { useAppDispatch } from "../../../redux/hooks";
+import { updateGoldAmount } from "../../../redux/assetsSlice";
 
 export const Gold = () => {
-  const { register, getValues, setValue, resetField, watch } = useForm<ICalculatorFormInputGold>();
+  const dispatch = useAppDispatch();
+  const { register, getValues, setValue, watch } = useForm<ICalculatorFormInputGold>({
+    defaultValues: JSON.parse(localStorage.getItem("gold") || "{}"),
+  });
   const formWatcher = watch();
 
   useEffect(() => {
-    console.log(getValues());
+    localStorage.setItem("gold", JSON.stringify(getValues()));
+    updateStore();
   }, [formWatcher]);
+
+  function updateStore() {
+    const formValues = getValues();
+
+    const totalVori =
+      Number(formValues.carat22.vori) +
+      Number(formValues.carat21.vori) +
+      Number(formValues.carat18.vori) +
+      Number(formValues.old.vori);
+
+    const totalGram =
+      Number(formValues.carat22.gram) +
+      Number(formValues.carat21.gram) +
+      Number(formValues.carat18.gram) +
+      Number(formValues.old.gram);
+
+    const totalTaka =
+      Number(formValues.carat22.taka) +
+      Number(formValues.carat21.taka) +
+      Number(formValues.carat18.taka) +
+      Number(formValues.old.taka);
+
+    dispatch(
+      updateGoldAmount({
+        vori: totalVori,
+        gram: totalGram,
+        taka: totalTaka,
+      })
+    );
+  }
 
   return (
     <Box mb={6}>
@@ -39,8 +75,8 @@ export const Gold = () => {
                   setValue("carat22.gram", (event.target.value * 11.664).toFixed(2));
                   setValue("carat22.taka", (event.target.value * 11.664 * Price.SellingPrice.Gold.carat22).toFixed(2));
                 } else {
-                  resetField("carat22.gram");
-                  resetField("carat22.taka");
+                  setValue("carat22.gram", "");
+                  setValue("carat22.taka", "");
                 }
               },
             })}
@@ -63,8 +99,8 @@ export const Gold = () => {
                   setValue("carat22.vori", (event.target.value / 11.664).toFixed(2));
                   setValue("carat22.taka", (event.target.value * Price.SellingPrice.Gold.carat22).toFixed(2));
                 } else {
-                  resetField("carat22.vori");
-                  resetField("carat22.taka");
+                  setValue("carat22.vori", '');
+                  setValue("carat22.taka", '');
                 }
               },
             })}
@@ -87,8 +123,8 @@ export const Gold = () => {
                   setValue("carat22.vori", (event.target.value / 11.664 / Price.SellingPrice.Gold.carat22).toFixed(2));
                   setValue("carat22.gram", (event.target.value / Price.SellingPrice.Gold.carat22).toFixed(2));
                 } else {
-                  resetField("carat22.vori");
-                  resetField("carat22.gram");
+                  setValue("carat22.vori", '');
+                  setValue("carat22.gram", '');
                 }
               },
             })}
@@ -120,8 +156,8 @@ export const Gold = () => {
                   setValue("carat21.gram", (event.target.value * 11.664).toFixed(2));
                   setValue("carat21.taka", (event.target.value * 11.664 * Price.SellingPrice.Gold.carat21).toFixed(2));
                 } else {
-                  resetField("carat21.gram");
-                  resetField("carat21.taka");
+                  setValue("carat21.gram", '');
+                  setValue("carat21.taka", '');
                 }
               },
             })}
@@ -144,8 +180,8 @@ export const Gold = () => {
                   setValue("carat21.vori", (event.target.value / 11.664).toFixed(2));
                   setValue("carat21.taka", (event.target.value * Price.SellingPrice.Gold.carat21).toFixed(2));
                 } else {
-                  resetField("carat21.vori");
-                  resetField("carat21.taka");
+                  setValue("carat21.vori", '');
+                  setValue("carat21.taka", '');
                 }
               },
             })}
@@ -168,8 +204,8 @@ export const Gold = () => {
                   setValue("carat21.vori", (event.target.value / 11.664 / Price.SellingPrice.Gold.carat21).toFixed(2));
                   setValue("carat21.gram", (event.target.value / Price.SellingPrice.Gold.carat21).toFixed(2));
                 } else {
-                  resetField("carat21.vori");
-                  resetField("carat21.gram");
+                  setValue("carat21.vori", '');
+                  setValue("carat21.gram", '');
                 }
               },
             })}
@@ -201,8 +237,8 @@ export const Gold = () => {
                   setValue("carat18.gram", (event.target.value * 11.664).toFixed(2));
                   setValue("carat18.taka", (event.target.value * 11.664 * Price.SellingPrice.Gold.carat18).toFixed(2));
                 } else {
-                  resetField("carat18.gram");
-                  resetField("carat18.taka");
+                  setValue("carat18.gram", '');
+                  setValue("carat18.taka", '');
                 }
               },
             })}
@@ -225,8 +261,8 @@ export const Gold = () => {
                   setValue("carat18.vori", (event.target.value / 11.664).toFixed(2));
                   setValue("carat18.taka", (event.target.value * Price.SellingPrice.Gold.carat18).toFixed(2));
                 } else {
-                  resetField("carat18.vori");
-                  resetField("carat18.taka");
+                  setValue("carat18.vori", '');
+                  setValue("carat18.taka", '');
                 }
               },
             })}
@@ -249,8 +285,8 @@ export const Gold = () => {
                   setValue("carat18.vori", (event.target.value / 11.664 / Price.SellingPrice.Gold.carat18).toFixed(2));
                   setValue("carat18.gram", (event.target.value / Price.SellingPrice.Gold.carat18).toFixed(2));
                 } else {
-                  resetField("carat18.vori");
-                  resetField("carat18.gram");
+                  setValue("carat18.vori", '');
+                  setValue("carat18.gram", '');
                 }
               },
             })}
@@ -282,8 +318,8 @@ export const Gold = () => {
                   setValue("old.gram", (event.target.value * 11.664).toFixed(2));
                   setValue("old.taka", (event.target.value * 11.664 * Price.SellingPrice.Gold.old).toFixed(2));
                 } else {
-                  resetField("old.gram");
-                  resetField("old.taka");
+                  setValue("old.gram", '');
+                  setValue("old.taka", '');
                 }
               },
             })}
@@ -306,8 +342,8 @@ export const Gold = () => {
                   setValue("old.vori", (event.target.value / 11.664).toFixed(2));
                   setValue("old.taka", (event.target.value * Price.SellingPrice.Gold.old).toFixed(2));
                 } else {
-                  resetField("old.vori");
-                  resetField("old.taka");
+                  setValue("old.vori", '');
+                  setValue("old.taka", '');
                 }
               },
             })}
@@ -330,8 +366,8 @@ export const Gold = () => {
                   setValue("old.vori", (event.target.value / 11.664 / Price.SellingPrice.Gold.old).toFixed(2));
                   setValue("old.gram", (event.target.value / Price.SellingPrice.Gold.old).toFixed(2));
                 } else {
-                  resetField("old.vori");
-                  resetField("old.gram");
+                  setValue("old.vori", '');
+                  setValue("old.gram", '');
                 }
               },
             })}

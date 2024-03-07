@@ -4,14 +4,31 @@ import { useForm } from "react-hook-form";
 import { ICalculatorFormInputNonZakatable } from "../Calculator/ICalculatorFormInput";
 import { digitValidator } from "../../../utils";
 import { useEffect } from "react";
+import { useAppDispatch } from "../../../redux/hooks";
+import { updateNonZakatableAssetsAmount } from "../../../redux/assetsSlice";
 
 export const NonZakatableAssets = () => {
-  const { register, getValues, watch } = useForm<ICalculatorFormInputNonZakatable>();
+  const dispatch = useAppDispatch();
+  const { register, getValues, watch } = useForm<ICalculatorFormInputNonZakatable>({
+    defaultValues: JSON.parse(localStorage.getItem('nonZakatableAssets') || '{}')
+  });
   const formWatcher = watch();
 
   useEffect(() => {
-    console.log(getValues());
+    localStorage.setItem('nonZakatableAssets', JSON.stringify(getValues()));
+    updateStore();
   }, [formWatcher]);
+
+  function updateStore() {
+    const formValues = getValues();
+    let totalMoney = 0
+    
+    for (let key in formValues) {
+      totalMoney += Number(formValues[key as keyof ICalculatorFormInputNonZakatable]);
+    }
+
+    dispatch(updateNonZakatableAssetsAmount(totalMoney));
+  }
 
   return (
     <Box mb={6}>

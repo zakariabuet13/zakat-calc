@@ -8,7 +8,8 @@ import { numberFormatter } from "../../utils";
 export const ZakatResult = () => {
   const [isExplanationModalOpen, setIsExplanationModalOpen] = useState(false);
   const NisabAmount = useMemo(() => numberFormatter.format(Nisab), []);
-  const money = useAppSelector((state) => state.assets.money);
+  const totalZakatableAssets = useAppSelector((state) => state.assets.totalZakatableAssets);
+  const totalZakat = useAppSelector((state) => state.assets.zakat);
 
   return (
     <Box p={1}>
@@ -20,10 +21,10 @@ export const ZakatResult = () => {
         যাকাতের নিসাবঃ {NisabAmount}
       </Typography>
       <Typography variant={"body1"} fontWeight={700}>
-        মোট সম্পদঃ {numberFormatter.format(money)}
+        মোট সম্পদঃ {numberFormatter.format(totalZakatableAssets)}
       </Typography>
       <Typography variant={"body1"} color={"primary.main"} fontWeight={700}>
-        আদায়যোগ্য যাকাতঃ 0
+        আদায়যোগ্য যাকাতঃ {numberFormatter.format(totalZakat)}
       </Typography>
 
       <Box textAlign={"center"} mt={2}>

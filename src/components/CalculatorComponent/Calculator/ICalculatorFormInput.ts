@@ -1,4 +1,4 @@
-export interface ICalculatorFormInputGold {
+export type ICalculatorFormInputGold = {
   carat22: {
     vori: string;
     gram: string;
@@ -20,7 +20,7 @@ export interface ICalculatorFormInputGold {
     taka: string;
   };
 }
-export interface ICalculatorFormInputSilver {
+export type ICalculatorFormInputSilver = {
   carat22: {
     vori: string;
     gram: string;
@@ -43,7 +43,7 @@ export interface ICalculatorFormInputSilver {
   };
 }
 
-export interface ICalculatorFormInputMoney {
+export type ICalculatorFormInputMoney = {
   cash: string;
   savings: string;
   foreignCurrency: string;
@@ -60,7 +60,7 @@ export interface ICalculatorFormInputMoney {
   providentFund: string;
 }
 
-export interface ICalculatorFormInputNonZakatable {
+export type ICalculatorFormInputNonZakatable = {
   personalLoad: string;
   installments: string;
   mahar: string;
