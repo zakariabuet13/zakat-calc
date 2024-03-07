@@ -1,19 +1,19 @@
 import { Box, InputAdornment, TextField, Typography } from "@mui/material";
 import styles from "../Calculator/calculator.module.css";
-import { UseFormRegister, UseFormResetField, UseFormSetValue } from "react-hook-form";
-import { ICalculatorFormInput } from "../Calculator/ICalculatorFormInput";
+import { useForm } from "react-hook-form";
+import { ICalculatorFormInputSilver } from "../Calculator/ICalculatorFormInput";
 import { digitValidator } from "../../../utils";
 import { Price } from "../../../constants";
+import { useEffect } from "react";
 
-export const Silver = ({
-  register,
-  setValue,
-  resetField,
-}: {
-  register: UseFormRegister<ICalculatorFormInput>;
-  setValue: UseFormSetValue<ICalculatorFormInput>;
-  resetField: UseFormResetField<ICalculatorFormInput>;
-}) => {
+export const Silver = () => {
+  const { register, getValues, setValue, resetField, watch } = useForm<ICalculatorFormInputSilver>();
+  const formWatcher = watch();
+
+  useEffect(() => {
+    console.log(getValues());
+  }, [formWatcher]);
+
   return (
     <Box mb={6}>
       <Box mb={2}>
@@ -32,66 +32,78 @@ export const Silver = ({
 
         <Box className={styles["three-field-row"]}>
           <TextField
-            {...register("silver.carat22.vori", {
+            {...register("carat22.vori", {
               onChange: (event) => {
                 const value = event.target.value;
                 if (value !== "") {
-                  setValue("silver.carat22.gram", (event.target.value * 11.664).toFixed(2));
+                  setValue("carat22.gram", (event.target.value * 11.664).toFixed(2));
                   setValue(
-                    "silver.carat22.taka",
+                    "carat22.taka",
                     (event.target.value * 11.664 * Price.SellingPrice.Silver.carat22).toFixed(2)
                   );
                 } else {
-                  resetField("silver.carat22.gram");
-                  resetField("silver.carat22.taka");
+                  resetField("carat22.gram");
+                  resetField("carat22.taka");
                 }
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>ভরিঃ</InputAdornment>,
+              startAdornment: (
+                <InputAdornment position="start" disablePointerEvents={true}>
+                  ভরিঃ
+                </InputAdornment>
+              ),
             }}
             onKeyDown={digitValidator}
             variant="outlined"
             size="small"
           />
           <TextField
-            {...register("silver.carat22.gram", {
+            {...register("carat22.gram", {
               onChange: (event) => {
                 const value = event.target.value;
                 if (value !== "") {
-                  setValue("silver.carat22.vori", (event.target.value / 11.664).toFixed(2));
-                  setValue("silver.carat22.taka", (event.target.value * Price.SellingPrice.Silver.carat22).toFixed(2));
+                  setValue("carat22.vori", (event.target.value / 11.664).toFixed(2));
+                  setValue("carat22.taka", (event.target.value * Price.SellingPrice.Silver.carat22).toFixed(2));
                 } else {
-                  resetField("silver.carat22.vori");
-                  resetField("silver.carat22.taka");
+                  resetField("carat22.vori");
+                  resetField("carat22.taka");
                 }
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>গ্রামঃ</InputAdornment>,
+              startAdornment: (
+                <InputAdornment position="start" disablePointerEvents={true}>
+                  গ্রামঃ
+                </InputAdornment>
+              ),
             }}
             onKeyDown={digitValidator}
             variant="outlined"
             size="small"
           />
           <TextField
-            {...register("silver.carat22.taka", {
+            {...register("carat22.taka", {
               onChange: (event) => {
                 const value = event.target.value;
                 if (value !== "") {
                   setValue(
-                    "silver.carat22.vori",
+                    "carat22.vori",
                     (event.target.value / 11.664 / Price.SellingPrice.Silver.carat22).toFixed(2)
                   );
-                  setValue("silver.carat22.gram", (event.target.value / Price.SellingPrice.Silver.carat22).toFixed(2));
+                  setValue("carat22.gram", (event.target.value / Price.SellingPrice.Silver.carat22).toFixed(2));
                 } else {
-                  resetField("silver.carat22.vori");
-                  resetField("silver.carat22.gram");
+                  resetField("carat22.vori");
+                  resetField("carat22.gram");
                 }
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>বিক্রয় মূল্যঃ</InputAdornment>,
+              startAdornment: (
+                <InputAdornment position="start" disablePointerEvents={true}>
+                  বিক্রয় মূল্যঃ
+                </InputAdornment>
+              ),
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -107,66 +119,78 @@ export const Silver = ({
 
         <Box className={styles["three-field-row"]}>
           <TextField
-            {...register("silver.carat21.vori", {
+            {...register("carat21.vori", {
               onChange: (event) => {
                 const value = event.target.value;
                 if (value !== "") {
-                  setValue("silver.carat21.gram", (event.target.value * 11.664).toFixed(2));
+                  setValue("carat21.gram", (event.target.value * 11.664).toFixed(2));
                   setValue(
-                    "silver.carat21.taka",
+                    "carat21.taka",
                     (event.target.value * 11.664 * Price.SellingPrice.Silver.carat21).toFixed(2)
                   );
                 } else {
-                  resetField("silver.carat21.gram");
-                  resetField("silver.carat21.taka");
+                  resetField("carat21.gram");
+                  resetField("carat21.taka");
                 }
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>ভরিঃ</InputAdornment>,
+              startAdornment: (
+                <InputAdornment position="start" disablePointerEvents={true}>
+                  ভরিঃ
+                </InputAdornment>
+              ),
             }}
             onKeyDown={digitValidator}
             variant="outlined"
             size="small"
           />
           <TextField
-            {...register("silver.carat21.gram", {
+            {...register("carat21.gram", {
               onChange: (event) => {
                 const value = event.target.value;
                 if (value !== "") {
-                  setValue("silver.carat21.vori", (event.target.value / 11.664).toFixed(2));
-                  setValue("silver.carat21.taka", (event.target.value * Price.SellingPrice.Silver.carat21).toFixed(2));
+                  setValue("carat21.vori", (event.target.value / 11.664).toFixed(2));
+                  setValue("carat21.taka", (event.target.value * Price.SellingPrice.Silver.carat21).toFixed(2));
                 } else {
-                  resetField("silver.carat21.vori");
-                  resetField("silver.carat21.taka");
+                  resetField("carat21.vori");
+                  resetField("carat21.taka");
                 }
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>গ্রামঃ</InputAdornment>,
+              startAdornment: (
+                <InputAdornment position="start" disablePointerEvents={true}>
+                  গ্রামঃ
+                </InputAdornment>
+              ),
             }}
             onKeyDown={digitValidator}
             variant="outlined"
             size="small"
           />
           <TextField
-            {...register("silver.carat21.taka", {
+            {...register("carat21.taka", {
               onChange: (event) => {
                 const value = event.target.value;
                 if (value !== "") {
                   setValue(
-                    "silver.carat21.vori",
+                    "carat21.vori",
                     (event.target.value / 11.664 / Price.SellingPrice.Silver.carat21).toFixed(2)
                   );
-                  setValue("silver.carat21.gram", (event.target.value / Price.SellingPrice.Silver.carat21).toFixed(2));
+                  setValue("carat21.gram", (event.target.value / Price.SellingPrice.Silver.carat21).toFixed(2));
                 } else {
-                  resetField("silver.carat21.vori");
-                  resetField("silver.carat21.gram");
+                  resetField("carat21.vori");
+                  resetField("carat21.gram");
                 }
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>বিক্রয় মূল্যঃ</InputAdornment>,
+              startAdornment: (
+                <InputAdornment position="start" disablePointerEvents={true}>
+                  বিক্রয় মূল্যঃ
+                </InputAdornment>
+              ),
             }}
             variant="outlined"
             onKeyDown={digitValidator}
@@ -182,66 +206,78 @@ export const Silver = ({
 
         <Box className={styles["three-field-row"]}>
           <TextField
-            {...register("silver.carat18.vori", {
+            {...register("carat18.vori", {
               onChange: (event) => {
                 const value = event.target.value;
                 if (value !== "") {
-                  setValue("silver.carat18.gram", (event.target.value * 11.664).toFixed(2));
+                  setValue("carat18.gram", (event.target.value * 11.664).toFixed(2));
                   setValue(
-                    "silver.carat18.taka",
+                    "carat18.taka",
                     (event.target.value * 11.664 * Price.SellingPrice.Silver.carat18).toFixed(2)
                   );
                 } else {
-                  resetField("silver.carat18.gram");
-                  resetField("silver.carat18.taka");
+                  resetField("carat18.gram");
+                  resetField("carat18.taka");
                 }
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>ভরিঃ</InputAdornment>,
+              startAdornment: (
+                <InputAdornment position="start" disablePointerEvents={true}>
+                  ভরিঃ
+                </InputAdornment>
+              ),
             }}
             onKeyDown={digitValidator}
             variant="outlined"
             size="small"
           />
           <TextField
-            {...register("silver.carat18.gram", {
+            {...register("carat18.gram", {
               onChange: (event) => {
                 const value = event.target.value;
                 if (value !== "") {
-                  setValue("silver.carat18.vori", (event.target.value / 11.664).toFixed(2));
-                  setValue("silver.carat18.taka", (event.target.value * Price.SellingPrice.Silver.carat18).toFixed(2));
+                  setValue("carat18.vori", (event.target.value / 11.664).toFixed(2));
+                  setValue("carat18.taka", (event.target.value * Price.SellingPrice.Silver.carat18).toFixed(2));
                 } else {
-                  resetField("silver.carat18.vori");
-                  resetField("silver.carat18.taka");
+                  resetField("carat18.vori");
+                  resetField("carat18.taka");
                 }
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>গ্রামঃ</InputAdornment>,
+              startAdornment: (
+                <InputAdornment position="start" disablePointerEvents={true}>
+                  গ্রামঃ
+                </InputAdornment>
+              ),
             }}
             onKeyDown={digitValidator}
             variant="outlined"
             size="small"
           />
           <TextField
-            {...register("silver.carat18.taka", {
+            {...register("carat18.taka", {
               onChange: (event) => {
                 const value = event.target.value;
                 if (value !== "") {
                   setValue(
-                    "silver.carat18.vori",
+                    "carat18.vori",
                     (event.target.value / 11.664 / Price.SellingPrice.Silver.carat18).toFixed(2)
                   );
-                  setValue("silver.carat18.gram", (event.target.value / Price.SellingPrice.Silver.carat18).toFixed(2));
+                  setValue("carat18.gram", (event.target.value / Price.SellingPrice.Silver.carat18).toFixed(2));
                 } else {
-                  resetField("silver.carat18.vori");
-                  resetField("silver.carat18.gram");
+                  resetField("carat18.vori");
+                  resetField("carat18.gram");
                 }
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>বিক্রয় মূল্যঃ</InputAdornment>,
+              startAdornment: (
+                <InputAdornment position="start" disablePointerEvents={true}>
+                  বিক্রয় মূল্যঃ
+                </InputAdornment>
+              ),
             }}
             onKeyDown={digitValidator}
             variant="outlined"
@@ -257,60 +293,72 @@ export const Silver = ({
 
         <Box className={styles["three-field-row"]}>
           <TextField
-            {...register("silver.old.vori", {
+            {...register("old.vori", {
               onChange: (event) => {
                 const value = event.target.value;
                 if (value !== "") {
-                  setValue("silver.old.gram", (event.target.value * 11.664).toFixed(2));
-                  setValue("silver.old.taka", (event.target.value * 11.664 * Price.SellingPrice.Silver.old).toFixed(2));
+                  setValue("old.gram", (event.target.value * 11.664).toFixed(2));
+                  setValue("old.taka", (event.target.value * 11.664 * Price.SellingPrice.Silver.old).toFixed(2));
                 } else {
-                  resetField("silver.old.gram");
-                  resetField("silver.old.taka");
+                  resetField("old.gram");
+                  resetField("old.taka");
                 }
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>ভরিঃ</InputAdornment>,
+              startAdornment: (
+                <InputAdornment position="start" disablePointerEvents={true}>
+                  ভরিঃ
+                </InputAdornment>
+              ),
             }}
             onKeyDown={digitValidator}
             variant="outlined"
             size="small"
           />
           <TextField
-            {...register("silver.old.gram", {
+            {...register("old.gram", {
               onChange: (event) => {
                 const value = event.target.value;
                 if (value !== "") {
-                  setValue("silver.old.vori", (event.target.value / 11.664).toFixed(2));
-                  setValue("silver.old.taka", (event.target.value * Price.SellingPrice.Silver.old).toFixed(2));
+                  setValue("old.vori", (event.target.value / 11.664).toFixed(2));
+                  setValue("old.taka", (event.target.value * Price.SellingPrice.Silver.old).toFixed(2));
                 } else {
-                  resetField("silver.old.vori");
-                  resetField("silver.old.taka");
+                  resetField("old.vori");
+                  resetField("old.taka");
                 }
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>গ্রামঃ</InputAdornment>,
+              startAdornment: (
+                <InputAdornment position="start" disablePointerEvents={true}>
+                  গ্রামঃ
+                </InputAdornment>
+              ),
             }}
             onKeyDown={digitValidator}
             variant="outlined"
             size="small"
           />
           <TextField
-            {...register("silver.old.taka", {
+            {...register("old.taka", {
               onChange: (event) => {
                 const value = event.target.value;
                 if (value !== "") {
-                  setValue("silver.old.vori", (event.target.value / 11.664 / Price.SellingPrice.Silver.old).toFixed(2));
-                  setValue("silver.old.gram", (event.target.value / Price.SellingPrice.Silver.old).toFixed(2));
+                  setValue("old.vori", (event.target.value / 11.664 / Price.SellingPrice.Silver.old).toFixed(2));
+                  setValue("old.gram", (event.target.value / Price.SellingPrice.Silver.old).toFixed(2));
                 } else {
-                  resetField("silver.old.vori");
-                  resetField("silver.old.gram");
+                  resetField("old.vori");
+                  resetField("old.gram");
                 }
               },
             })}
             InputProps={{
-              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>বিক্রয় মূল্যঃ</InputAdornment>,
+              startAdornment: (
+                <InputAdornment position="start" disablePointerEvents={true}>
+                  বিক্রয় মূল্যঃ
+                </InputAdornment>
+              ),
             }}
             onKeyDown={digitValidator}
             variant="outlined"

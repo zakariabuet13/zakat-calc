@@ -1,10 +1,18 @@
 import { Box, InputAdornment, TextField, Typography } from "@mui/material";
 import styles from "../Calculator/calculator.module.css";
-import { UseFormRegister } from "react-hook-form";
-import { ICalculatorFormInput } from "../Calculator/ICalculatorFormInput";
+import { useForm } from "react-hook-form";
+import { ICalculatorFormInputNonZakatable } from "../Calculator/ICalculatorFormInput";
 import { digitValidator } from "../../../utils";
+import { useEffect } from "react";
 
-export const NonZakatableAssets = ({ register }: { register: UseFormRegister<ICalculatorFormInput> }) => {
+export const NonZakatableAssets = () => {
+  const { register, getValues, watch } = useForm<ICalculatorFormInputNonZakatable>();
+  const formWatcher = watch();
+
+  useEffect(() => {
+    console.log(getValues());
+  }, [formWatcher]);
+
   return (
     <Box mb={6}>
       <Box className={styles["input-group"]}>
@@ -17,11 +25,15 @@ export const NonZakatableAssets = ({ register }: { register: UseFormRegister<ICa
 
         <Box>
           <TextField
-            {...register("nonZakatableAsset.personalLoad")}
+            {...register("personalLoad")}
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: (
+                <InputAdornment position="start" disablePointerEvents={true}>
+                  সমপরিমান মূল্যঃ
+                </InputAdornment>
+              ),
             }}
             variant="outlined"
             size="small"
@@ -40,11 +52,15 @@ export const NonZakatableAssets = ({ register }: { register: UseFormRegister<ICa
 
         <Box>
           <TextField
-            {...register("nonZakatableAsset.installments")}
+            {...register("installments")}
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: (
+                <InputAdornment position="start" disablePointerEvents={true}>
+                  সমপরিমান মূল্যঃ
+                </InputAdornment>
+              ),
             }}
             variant="outlined"
             size="small"
@@ -62,11 +78,15 @@ export const NonZakatableAssets = ({ register }: { register: UseFormRegister<ICa
 
         <Box>
           <TextField
-            {...register("nonZakatableAsset.mahar")}
+            {...register("mahar")}
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: (
+                <InputAdornment position="start" disablePointerEvents={true}>
+                  সমপরিমান মূল্যঃ
+                </InputAdornment>
+              ),
             }}
             variant="outlined"
             size="small"
@@ -84,11 +104,15 @@ export const NonZakatableAssets = ({ register }: { register: UseFormRegister<ICa
 
         <Box>
           <TextField
-            {...register("nonZakatableAsset.utilityBill")}
+            {...register("utilityBill")}
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: (
+                <InputAdornment position="start" disablePointerEvents={true}>
+                  সমপরিমান মূল্যঃ
+                </InputAdornment>
+              ),
             }}
             variant="outlined"
             size="small"
@@ -106,11 +130,15 @@ export const NonZakatableAssets = ({ register }: { register: UseFormRegister<ICa
 
         <Box>
           <TextField
-            {...register("nonZakatableAsset.outstandingPament")}
+            {...register("outstandingPament")}
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: (
+                <InputAdornment position="start" disablePointerEvents={true}>
+                  সমপরিমান মূল্যঃ
+                </InputAdornment>
+              ),
             }}
             variant="outlined"
             size="small"
@@ -128,11 +156,15 @@ export const NonZakatableAssets = ({ register }: { register: UseFormRegister<ICa
 
         <Box>
           <TextField
-            {...register("nonZakatableAsset.advanceZakat")}
+            {...register("advanceZakat")}
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: (
+                <InputAdornment position="start" disablePointerEvents={true}>
+                  সমপরিমান মূল্যঃ
+                </InputAdornment>
+              ),
             }}
             variant="outlined"
             size="small"
@@ -147,11 +179,15 @@ export const NonZakatableAssets = ({ register }: { register: UseFormRegister<ICa
 
         <Box>
           <TextField
-            {...register("nonZakatableAsset.pastZakat")}
+            {...register("pastZakat")}
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: (
+                <InputAdornment position="start" disablePointerEvents={true}>
+                  সমপরিমান মূল্যঃ
+                </InputAdornment>
+              ),
             }}
             variant="outlined"
             size="small"
@@ -169,11 +205,15 @@ export const NonZakatableAssets = ({ register }: { register: UseFormRegister<ICa
 
         <Box>
           <TextField
-            {...register("nonZakatableAsset.securityMoney")}
+            {...register("securityMoney")}
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: (
+                <InputAdornment position="start" disablePointerEvents={true}>
+                  সমপরিমান মূল্যঃ
+                </InputAdornment>
+              ),
             }}
             variant="outlined"
             size="small"
@@ -193,11 +233,15 @@ export const NonZakatableAssets = ({ register }: { register: UseFormRegister<ICa
 
         <Box>
           <TextField
-            {...register("nonZakatableAsset.companyLoad")}
+            {...register("companyLoad")}
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: (
+                <InputAdornment position="start" disablePointerEvents={true}>
+                  সমপরিমান মূল্যঃ
+                </InputAdornment>
+              ),
             }}
             variant="outlined"
             size="small"
@@ -215,11 +259,15 @@ export const NonZakatableAssets = ({ register }: { register: UseFormRegister<ICa
 
         <Box>
           <TextField
-            {...register("nonZakatableAsset.illegalMoney")}
+            {...register("illegalMoney")}
             fullWidth
             onKeyDown={digitValidator}
             InputProps={{
-              startAdornment: <InputAdornment position="start" disablePointerEvents={true}>সমপরিমান মূল্যঃ</InputAdornment>,
+              startAdornment: (
+                <InputAdornment position="start" disablePointerEvents={true}>
+                  সমপরিমান মূল্যঃ
+                </InputAdornment>
+              ),
             }}
             variant="outlined"
             size="small"

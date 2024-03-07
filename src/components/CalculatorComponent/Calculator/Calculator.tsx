@@ -6,23 +6,8 @@ import Money from "../Money";
 import NonZakatableAssets from "../NonZakatableAssets";
 import ZakatResult from "../../ZakatResult";
 import ZakatResultMobile from "../../ZakatResultMobile";
-import { useForm } from "react-hook-form";
-import { ICalculatorFormInput } from "./ICalculatorFormInput";
-import { useEffect } from "react";
 
 export const CalculatorComponent = () => {
-  const { register, getValues, setValue, resetField } = useForm<ICalculatorFormInput>();
-
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     console.log(getValues());
-  //   }, 10000);
-
-  //   return () => {
-  //     clearInterval(interval);
-  //   };
-  // }, []);
-
   return (
     <Box className={styles["page-wrapper"]}>
       <Box className={styles["calculator"]}>
@@ -31,9 +16,9 @@ export const CalculatorComponent = () => {
             যে সকল সম্পদের উপর যাকাত ফরয
           </Typography>
 
-          <Gold register={register} setValue={setValue} resetField={resetField} />
-          <Silver register={register} setValue={setValue} resetField={resetField} />
-          <Money register={register} />
+          <Gold/>
+          <Silver/>
+          <Money />
         </Box>
 
         <Box component={"section"} mt={6}>
@@ -41,7 +26,7 @@ export const CalculatorComponent = () => {
             যাকাত থেকে বিয়োগযোগ্য সম্পদ
           </Typography>
 
-          <NonZakatableAssets register={register} />
+          <NonZakatableAssets />
         </Box>
       </Box>
 
