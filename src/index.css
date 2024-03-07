@@ -12,3 +12,10 @@
 a {
   text-decoration: none;
 }
+
+@media screen and (max-width: 600px) {
+  .scroll-to-top {
+    right: 20px !important;
+    bottom: 100px !important;
+  }
+}

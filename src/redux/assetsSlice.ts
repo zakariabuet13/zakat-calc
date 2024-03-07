@@ -66,22 +66,12 @@ export const assetsSlice = createSlice({
 const calculateZakat = (state: AssetsState) => {
   state.totalZakatableAssets = state.gold.taka + state.silver.taka + state.money - state.nonZakatableAssets;
 
-  if (state.silver.vori === 0 && state.money === 0) {
-    if (state.gold.vori >= 7.5) {
-      state.zakat = Math.ceil(state.totalZakatableAssets * 0.025);
-      return;
-    }
-
+  if (state.silver.vori === 0 && state.money === 0 && state.gold.vori < 7.5) {
     state.zakat = 0;
     return;
   }
 
-  if (state.gold.vori === 0 && state.money === 0) {
-    if (state.silver.vori >= 52.5) {
-      state.zakat = Math.ceil(state.totalZakatableAssets * 0.025);
-      return;
-    }
-
+  if (state.gold.vori === 0 && state.money === 0 && state.silver.vori < 52.5) {
     state.zakat = 0;
     return;
   }

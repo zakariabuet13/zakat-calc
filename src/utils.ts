@@ -17,6 +17,7 @@ const allowedInputKeys = [
 ];
 
 export const numberFormatter = new Intl.NumberFormat("bn-BD", { maximumFractionDigits: 0 });
+export const numberFormatter2Fraction = new Intl.NumberFormat("bn-BD", { maximumFractionDigits: 2 });
 
 export const digitValidator = (event: React.KeyboardEvent<HTMLDivElement>) => {
   if (!allowedInputKeys.includes(event.key)) {

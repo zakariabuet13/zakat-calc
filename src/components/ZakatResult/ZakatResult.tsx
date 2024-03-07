@@ -28,14 +28,16 @@ export const ZakatResult = () => {
       </Typography>
 
       <Box textAlign={"center"} mt={2}>
-        <Button
-          variant="contained"
-          onClick={() => {
-            setIsExplanationModalOpen(true);
-          }}
-        >
-          ব্যাখ্যা
-        </Button>
+        {totalZakatableAssets > 0 && (
+          <Button
+            variant="contained"
+            onClick={() => {
+              setIsExplanationModalOpen(true);
+            }}
+          >
+            ব্যাখ্যা
+          </Button>
+        )}
 
         <ZakatResultExplanationModal
           isExplanationModalOpen={isExplanationModalOpen}
