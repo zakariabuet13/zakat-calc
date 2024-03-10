@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/zakat-calc/static/css/main.f1b89b40.css",
-    "main.js": "/zakat-calc/static/js/main.003b079e.js",
+    "main.css": "/zakat-calc/static/css/main.43af2d2e.css",
+    "main.js": "/zakat-calc/static/js/main.4eb1aa69.js",
     "static/media/roboto-latin-500-normal.woff2": "/zakat-calc/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "/zakat-calc/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
     "static/media/roboto-latin-400-normal.woff2": "/zakat-calc/static/media/roboto-latin-400-normal.b009a76ad6afe4ebd301.woff2",
@@ -59,11 +59,11 @@
     "static/media/roboto-greek-ext-400-normal.woff": "/zakat-calc/static/media/roboto-greek-ext-400-normal.f708607d2a7290fb8bfa.woff",
     "static/media/roboto-greek-ext-700-normal.woff": "/zakat-calc/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/zakat-calc/index.html",
-    "main.f1b89b40.css.map": "/zakat-calc/static/css/main.f1b89b40.css.map",
-    "main.003b079e.js.map": "/zakat-calc/static/js/main.003b079e.js.map"
+    "main.43af2d2e.css.map": "/zakat-calc/static/css/main.43af2d2e.css.map",
+    "main.4eb1aa69.js.map": "/zakat-calc/static/js/main.4eb1aa69.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1b89b40.css",
-    "static/js/main.003b079e.js"
+    "static/css/main.43af2d2e.css",
+    "static/js/main.4eb1aa69.js"
   ]
 }
