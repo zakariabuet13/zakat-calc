@@ -63,7 +63,7 @@ export const Gold = () => {
 
       <Box className={styles["input-group"]}>
         <Box>
-          <Typography>১) ২২ ক্যারেট স্বর্ণ</Typography>
+          <Typography>১. ২২ ক্যারেট স্বর্ণ</Typography>
         </Box>
 
         <Box className={styles["three-field-row"]}>
@@ -144,7 +144,7 @@ export const Gold = () => {
 
       <Box className={styles["input-group"]}>
         <Box>
-          <Typography>২) ২১ ক্যারেট স্বর্ণ</Typography>
+          <Typography>২. ২১ ক্যারেট স্বর্ণ</Typography>
         </Box>
 
         <Box className={styles["three-field-row"]}>
@@ -225,7 +225,7 @@ export const Gold = () => {
 
       <Box className={styles["input-group"]}>
         <Box>
-          <Typography>৩) ১৮ ক্যারেট স্বর্ণ</Typography>
+          <Typography>৩. ১৮ ক্যারেট স্বর্ণ</Typography>
         </Box>
 
         <Box className={styles["three-field-row"]}>
@@ -306,7 +306,7 @@ export const Gold = () => {
 
       <Box className={styles["input-group"]}>
         <Box>
-          <Typography>৪) সনাতন স্বর্ণ</Typography>
+          <Typography>৪. সনাতন স্বর্ণ</Typography>
         </Box>
 
         <Box className={styles["three-field-row"]}>

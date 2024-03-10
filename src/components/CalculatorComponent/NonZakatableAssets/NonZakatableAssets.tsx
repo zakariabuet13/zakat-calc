@@ -34,7 +34,7 @@ export const NonZakatableAssets = () => {
     <Box mb={6}>
       <Box className={styles["input-group"]}>
         <Box>
-          <Typography>১) ব্যক্তিগত বা সাংসারিক প্রয়োজনে গৃহীত সকল ঋণ/লোন</Typography>
+          <Typography>১. ব্যক্তিগত বা সাংসারিক প্রয়োজনে গৃহীত সকল ঋণ/লোন</Typography>
           <Typography variant="body2" className={styles["input-description"]}>
             (সাধারণ ঋণ বা ক্রেডিট কার্ডের লোন)
           </Typography>
@@ -60,7 +60,7 @@ export const NonZakatableAssets = () => {
 
       <Box className={styles["input-group"]}>
         <Box>
-          <Typography>২) কিস্তিতে ক্রয়কৃত বস্তুর পরিশোধ্য কিস্তির পরিমাণ</Typography>
+          <Typography>২. কিস্তিতে ক্রয়কৃত বস্তুর পরিশোধ্য কিস্তির পরিমাণ</Typography>
           <Typography variant="body2" className={styles["input-description"]}>
             (এক বছরে আদায়যোগ্য কিস্তির পরিমাণ। কারো যদি ৬ মাসের কিস্তি পরিশোধ করা বাকি থাকে তাহলে ৬ মাসের কিস্তি, আর যদি
             ১৮ মাসের(১২ মাসের বেশি) কিস্তি পরিশোধ করা বাকি থাকে তাহলে ১২ মাসের আদায়যোগ্য কিস্তি)
@@ -87,7 +87,7 @@ export const NonZakatableAssets = () => {
 
       <Box className={styles["input-group"]}>
         <Box>
-          <Typography>৩) অনাদায়ী স্ত্রীর মহর</Typography>
+          <Typography>৩. অনাদায়ী স্ত্রীর মহর</Typography>
           <Typography variant="body2" className={styles["input-description"]}>
             (যদি তা এই যাকাত বর্ষে আদায়ের নিয়ত করে থাকে)
           </Typography>
@@ -113,7 +113,7 @@ export const NonZakatableAssets = () => {
 
       <Box className={styles["input-group"]}>
         <Box>
-          <Typography>৪) ইউটিলিটি বিল</Typography>
+          <Typography>৪. ইউটিলিটি বিল</Typography>
           <Typography variant="body2" className={styles["input-description"]}>
             (বিদ্যুৎ, গ্যাস, পানি ইত্যাদির বিল যা যাকাত আদায়ের দিন পর্যন্ত পরিশোধ্য)
           </Typography>
@@ -139,7 +139,7 @@ export const NonZakatableAssets = () => {
 
       <Box className={styles["input-group"]}>
         <Box>
-          <Typography>৫) বকেয়া পেমেন্ট</Typography>
+          <Typography>৫. বকেয়া পেমেন্ট</Typography>
           <Typography variant="body2" className={styles["input-description"]}>
             (বাকিতে ক্রয়কৃত পণ্যের মূল্য, কর্মচারীদের বেতন-ভাতা ইত্যাদি যা যাকাত আদায়ের দিন পর্যন্ত পরিশোধ্য)
           </Typography>
@@ -165,7 +165,7 @@ export const NonZakatableAssets = () => {
 
       <Box className={styles["input-group"]}>
         <Box>
-          <Typography>৬) আগাম যাকাত</Typography>
+          <Typography>৬. আগাম যাকাত</Typography>
           <Typography variant="body2" className={styles["input-description"]}>
             (যা যাকাতের নিয়তে আগাম আদায় করা হয়েছে)
           </Typography>
@@ -191,7 +191,7 @@ export const NonZakatableAssets = () => {
 
       <Box className={styles["input-group"]}>
         <Box>
-          <Typography>৭) বিগত বছরের অনাদায়ী যাকাতের পরিমাণ</Typography>
+          <Typography>৭. বিগত বছরের অনাদায়ী যাকাতের পরিমাণ</Typography>
         </Box>
 
         <Box>
@@ -214,7 +214,7 @@ export const NonZakatableAssets = () => {
 
       <Box className={styles["input-group"]}>
         <Box>
-          <Typography>৮) এডভান্স/সিকিউরিটি মানি</Typography>
+          <Typography>৮. এডভান্স/সিকিউরিটি মানি</Typography>
           <Typography variant="body2" className={styles["input-description"]}>
             (যা ফেরত দিতে হবে)
           </Typography>
@@ -240,7 +240,7 @@ export const NonZakatableAssets = () => {
 
       <Box className={styles["input-group"]}>
         <Box>
-          <Typography>৯) কোম্পানির ঋণ/লোন</Typography>
+          <Typography>৯. কোম্পানির ঋণ/লোন</Typography>
           <Typography variant="body2" className={styles["input-description"]}>
             (ঋণ/লোন এর অর্থ দিয়ে যে পরিমাণ যাকাতযোগ্য সম্পদ (যেমন, কাঁচামাল) ক্রয় করেছে সে পরিমাণ বিয়োগযোগ্য। যেমন, ১০
             লক্ষ টাকা লোন করেছে এর থেকে ৪ লক্ষ টাকার কাঁচামাল বা বিক্রয়যোগ্য পণ্য-দ্রব্য ক্রয় করেছে। তাহলে ৪ লক্ষ টাকা
@@ -268,7 +268,7 @@ export const NonZakatableAssets = () => {
 
       <Box className={styles["input-group"]}>
         <Box>
-          <Typography>১০) হারাম বা অবৈধ অর্থ-সম্পদ</Typography>
+          <Typography>১০. হারাম বা অবৈধ অর্থ-সম্পদ</Typography>
           <Typography variant="body2" className={styles["input-description"]}>
             (যেমন, সুদ। এটি পুরোটাই সাদাকা করে দিতে হবে। হারাম সম্পদের যাকাত নেই)
           </Typography>

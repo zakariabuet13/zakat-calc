@@ -1,0 +1,70 @@
+.page-wrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  margin-top: 32px;
+}
+
+.masala {
+  border-right: 1px solid var(--color-secondary);
+  flex: 3;
+  padding-right: 1rem;
+}
+
+.index {
+  flex: 1;
+  position: sticky;
+  top: 120px;
+
+  border: 1px solid var(--color-primary);
+  border-radius: 0.25rem;
+}
+
+.masala-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.25rem;
+  margin-bottom: 8px;
+}
+
+.masala-index-item {
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.25rem;
+}
+
+.quote {
+  font-style: italic;
+  background: #eee;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  .page-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .masala {
+    border-right: 0px;
+    padding-right: 0;
+  }
+
+  .index {
+    position: static;    
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :global(.masala-page .scroll-to-top) {
+    bottom: 40px !important;
+  }
+}

@@ -63,7 +63,7 @@ export const Silver = () => {
 
       <Box className={styles["input-group"]}>
         <Box>
-          <Typography>১) ২২ ক্যারেট রূপা</Typography>
+          <Typography>১. ২২ ক্যারেট রূপা</Typography>
         </Box>
 
         <Box className={styles["three-field-row"]}>
@@ -150,7 +150,7 @@ export const Silver = () => {
 
       <Box className={styles["input-group"]}>
         <Box>
-          <Typography>২) ২১ ক্যারেট রূপা</Typography>
+          <Typography>২. ২১ ক্যারেট রূপা</Typography>
         </Box>
 
         <Box className={styles["three-field-row"]}>
@@ -237,7 +237,7 @@ export const Silver = () => {
 
       <Box className={styles["input-group"]}>
         <Box>
-          <Typography>৩) ১৮ ক্যারেট রূপা</Typography>
+          <Typography>৩. ১৮ ক্যারেট রূপা</Typography>
         </Box>
 
         <Box className={styles["three-field-row"]}>
@@ -324,7 +324,7 @@ export const Silver = () => {
 
       <Box className={styles["input-group"]}>
         <Box>
-          <Typography>৪) সনাতন রূপা</Typography>
+          <Typography>৪. সনাতন রূপা</Typography>
         </Box>
 
         <Box className={styles["three-field-row"]}>

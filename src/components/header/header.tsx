@@ -28,9 +28,9 @@ export const Header = () => {
               ক্যালকুলেটর
             </Typography>
           </Link>
-          <Link to={"/about-zakat"}>
+          <Link to={"/masala"}>
             <Typography className={styles["menu-item"]} color={"primary.main"}>
-              যাকাত সম্পর্কে
+              মাসআলা
             </Typography>
           </Link>
         </Box>

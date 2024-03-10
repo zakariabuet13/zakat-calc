@@ -1,7 +1,7 @@
 import { Navigate, createHashRouter } from "react-router-dom";
 
 import Calculator from "./pages/calculator";
-import AboutZakat from "./pages/about-zakat";
+import Masala from "./pages/masala";
 
 const router = createHashRouter([
   {
@@ -9,8 +9,8 @@ const router = createHashRouter([
     element: <Calculator/>,
   },
   {
-    path: '/about-zakat',
-    element: <AboutZakat/>,
+    path: '/masala',
+    element: <Masala/>,
   },
   {
     path: '*',

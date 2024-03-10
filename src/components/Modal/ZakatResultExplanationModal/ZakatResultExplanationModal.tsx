@@ -1,7 +1,6 @@
 import { Dialog, DialogContent, DialogTitle, IconButton, Typography, styled } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import { useMemo } from "react";
-import { numberFormatter, numberFormatter2Fraction } from "../../../utils";
+import { numberFormatter2Fraction } from "../../../utils";
 import { Nisab } from "../../../constants";
 import { useAppSelector } from "../../../redux/hooks";
 
@@ -29,8 +28,8 @@ export const ZakatResultExplanationModal = ({
       return (
         <>
           <Typography sx={{ mb: 2 }}>
-            আপনার শুধুমাত্র স্বর্ণ আছে। এক্ষেত্রে যাকাত ওয়াজিব হওয়ার জন্য ৭.৫ ভরি স্বর্ণ থাকতে হবে। আপনার যেহেতু স্বর্ণের
-            পরিমাণ ৭.৫ ভরি থেকে কম, তাই আপনার উপর যাকাত ওয়াজিব নয়।
+            আপনার শুধুমাত্র স্বর্ণ আছে। এক্ষেত্রে যাকাত ফরয হওয়ার জন্য ৭.৫ ভরি স্বর্ণ থাকতে হবে। আপনার যেহেতু স্বর্ণের
+            পরিমাণ ৭.৫ ভরি থেকে কম, তাই আপনার উপর যাকাত ফরয নয়।
           </Typography>
         </>
       );
@@ -40,8 +39,8 @@ export const ZakatResultExplanationModal = ({
       return (
         <>
           <Typography sx={{ mb: 2 }}>
-            আপনার শুধুমাত্র রূপা আছে। এক্ষেত্রে যাকাত ওয়াজিব হওয়ার জন্য ৫২.৫ ভরি রূপা থাকতে হবে। আপনার যেহেতু রূপার
-            পরিমাণ ৫২.৫ ভরি থেকে কম, তাই আপনার উপর যাকাত ওয়াজিব নয়।
+            আপনার শুধুমাত্র রূপা আছে। এক্ষেত্রে যাকাত ফরয হওয়ার জন্য ৫২.৫ ভরি রূপা থাকতে হবে। আপনার যেহেতু রূপার
+            পরিমাণ ৫২.৫ ভরি থেকে কম, তাই আপনার উপর যাকাত ফরয নয়।
           </Typography>
         </>
       );
@@ -69,7 +68,7 @@ export const ZakatResultExplanationModal = ({
 
     return (
       <>
-        <Typography sx={{ mb: 2 }}>আপনার নিসাব পরিমাণ সম্পদ নেই। সুতরাং আপনার উপর যাকাত ওয়াজিব নয়।</Typography>
+        <Typography sx={{ mb: 2 }}>আপনার নিসাব পরিমাণ সম্পদ নেই। সুতরাং আপনার উপর যাকাত ফরয নয়।</Typography>
       </>
     );
   }

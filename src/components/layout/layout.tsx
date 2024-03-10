@@ -2,9 +2,9 @@ import { Box, Container } from "@mui/material";
 import ScrollToTop from "react-scroll-to-top";
 import Header from "../header";
 
-export const Layout = ({ children }: any) => {
+export const Layout = ({ className, children }: any) => {
   return (
-    <Box>
+    <Box className={className}>
       <Header />
 
       <Container maxWidth="lg">{children}</Container>
