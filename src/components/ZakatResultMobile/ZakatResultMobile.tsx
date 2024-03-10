@@ -26,7 +26,7 @@ export const ZakatResultMobile = () => {
       </Box>
 
       <Box textAlign={"center"} mt={2}>
-        {totalZakatableAssets && (
+        {totalZakatableAssets > 0 && (
           <Button
             variant="contained"
             size="small"
