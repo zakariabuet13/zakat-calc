@@ -1,9 +1,9 @@
 const BuyingPrice = {
   Gold: {
-    carat22: 9490,
-    carat21: 9060,
-    carat18: 7765,
-    old: 6470,
+    carat22: 9680,
+    carat21: 9240,
+    carat18: 7920,
+    old: 6600,
   },
   Silver: {
     carat22: 180,
