@@ -51,6 +51,7 @@
     "static/media/roboto-vietnamese-500-normal.woff": "/zakat-calc/static/media/roboto-vietnamese-500-normal.657896dad292ee9a0a0a.woff",
     "static/media/roboto-vietnamese-700-normal.woff": "/zakat-calc/static/media/roboto-vietnamese-700-normal.4df79f684fcbca8386bd.woff",
     "static/media/roboto-greek-ext-500-normal.woff2": "/zakat-calc/static/media/roboto-greek-ext-500-normal.6fb9cffb1d3e72bf9293.woff2",
+    "index.html": "/zakat-calc/index.html",
     "static/media/roboto-greek-ext-400-normal.woff2": "/zakat-calc/static/media/roboto-greek-ext-400-normal.169619821ea93019d1bb.woff2",
     "static/media/roboto-greek-ext-300-normal.woff2": "/zakat-calc/static/media/roboto-greek-ext-300-normal.35b9d6be04b95f0f0530.woff2",
     "static/media/roboto-greek-ext-700-normal.woff2": "/zakat-calc/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
@@ -58,7 +59,6 @@
     "static/media/roboto-greek-ext-300-normal.woff": "/zakat-calc/static/media/roboto-greek-ext-300-normal.392a45a84c081c4b412d.woff",
     "static/media/roboto-greek-ext-400-normal.woff": "/zakat-calc/static/media/roboto-greek-ext-400-normal.f708607d2a7290fb8bfa.woff",
     "static/media/roboto-greek-ext-700-normal.woff": "/zakat-calc/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
-    "index.html": "/zakat-calc/index.html",
     "main.43af2d2e.css.map": "/zakat-calc/static/css/main.43af2d2e.css.map",
     "main.cd7ec4e3.js.map": "/zakat-calc/static/js/main.cd7ec4e3.js.map"
   },
